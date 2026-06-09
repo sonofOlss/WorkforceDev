@@ -1,0 +1,73 @@
+name: Update workforce dashboard
+
+on:
+  schedule:
+    - cron: "0 13 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "workforce-dashboard/**"
+      - ".github/workflows/update-dashboard.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: workforce-dashboard
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch new job postings
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python workforce-dashboard/scripts/fetch_jobs.py
+
+      - name: Rebuild dashboard data
+        run: python workforce-dashboard/scripts/aggregate.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add workforce-dashboard/data/
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Update workforce data"
+            git push origin main
+          fi
+
+      - name: Assemble dashboard site
+        run: |
+          mkdir -p _site
+          cp workforce-dashboard/site/index.html _site/
+          cp workforce-dashboard/data/dashboard.json _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: update-data
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
