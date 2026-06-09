@@ -1,0 +1,312 @@
+{
+ "generated_at": "2026-06-09 21:56 UTC",
+ "data_source": "sample",
+ "total_postings": 134,
+ "total_employers": 44,
+ "distinct_titles": 41,
+ "top_titles": [
+  {
+   "title": "Forklift Operator",
+   "count": 10,
+   "median_salary": 41750
+  },
+  {
+   "title": "Registered Nurse",
+   "count": 6,
+   "median_salary": 83500
+  },
+  {
+   "title": "Pharmacy Technician",
+   "count": 5,
+   "median_salary": 38500
+  },
+  {
+   "title": "Landscaper",
+   "count": 5,
+   "median_salary": 34000
+  },
+  {
+   "title": "Construction Laborer",
+   "count": 5,
+   "median_salary": 40500
+  },
+  {
+   "title": "IT Support Specialist",
+   "count": 5,
+   "median_salary": 51500
+  },
+  {
+   "title": "Certified Nursing Assistant",
+   "count": 5,
+   "median_salary": 36000
+  },
+  {
+   "title": "Delivery Driver",
+   "count": 5,
+   "median_salary": 52500
+  },
+  {
+   "title": "Warehouse Associate",
+   "count": 4,
+   "median_salary": 38250
+  },
+  {
+   "title": "Elementary Teacher",
+   "count": 4,
+   "median_salary": 51000
+  },
+  {
+   "title": "Maintenance Technician",
+   "count": 4,
+   "median_salary": 55250
+  },
+  {
+   "title": "Bank Teller",
+   "count": 4,
+   "median_salary": 37000
+  },
+  {
+   "title": "Security Officer",
+   "count": 4,
+   "median_salary": 35500
+  },
+  {
+   "title": "CNC Machinist",
+   "count": 4,
+   "median_salary": 58750
+  },
+  {
+   "title": "Production Operator",
+   "count": 4,
+   "median_salary": 45250
+  }
+ ],
+ "top_skills": [
+  {
+   "skill": "Reliability",
+   "category": "Soft Skills",
+   "count": 42,
+   "pct": 31.3
+  },
+  {
+   "skill": "Customer Service",
+   "category": "Sales & Customer Service",
+   "count": 39,
+   "pct": 29.1
+  },
+  {
+   "skill": "Attention to Detail",
+   "category": "Soft Skills",
+   "count": 36,
+   "pct": 26.9
+  },
+  {
+   "skill": "Teamwork",
+   "category": "Soft Skills",
+   "count": 34,
+   "pct": 25.4
+  },
+  {
+   "skill": "Problem Solving",
+   "category": "Soft Skills",
+   "count": 31,
+   "pct": 23.1
+  },
+  {
+   "skill": "OSHA Safety",
+   "category": "Skilled Trades & Manufacturing",
+   "count": 28,
+   "pct": 20.9
+  },
+  {
+   "skill": "Physical Stamina",
+   "category": "Soft Skills",
+   "count": 27,
+   "pct": 20.1
+  },
+  {
+   "skill": "Bilingual (Spanish)",
+   "category": "Business & Office",
+   "count": 22,
+   "pct": 16.4
+  },
+  {
+   "skill": "Inventory Management",
+   "category": "Logistics & Warehouse",
+   "count": 20,
+   "pct": 14.9
+  },
+  {
+   "skill": "Data Entry",
+   "category": "Business & Office",
+   "count": 16,
+   "pct": 11.9
+  },
+  {
+   "skill": "Communication",
+   "category": "Soft Skills",
+   "count": 16,
+   "pct": 11.9
+  },
+  {
+   "skill": "BLS/CPR Certification",
+   "category": "Healthcare",
+   "count": 16,
+   "pct": 11.9
+  },
+  {
+   "skill": "Forklift Operation",
+   "category": "Logistics & Warehouse",
+   "count": 14,
+   "pct": 10.4
+  },
+  {
+   "skill": "Hand & Power Tools",
+   "category": "Skilled Trades & Manufacturing",
+   "count": 14,
+   "pct": 10.4
+  },
+  {
+   "skill": "Microsoft Office",
+   "category": "Business & Office",
+   "count": 13,
+   "pct": 9.7
+  },
+  {
+   "skill": "Patient Care",
+   "category": "Healthcare",
+   "count": 12,
+   "pct": 9.0
+  },
+  {
+   "skill": "Food Safety",
+   "category": "Sales & Customer Service",
+   "count": 11,
+   "pct": 8.2
+  },
+  {
+   "skill": "Lesson Planning",
+   "category": "Education & Public Service",
+   "count": 11,
+   "pct": 8.2
+  },
+  {
+   "skill": "Shipping & Receiving",
+   "category": "Logistics & Warehouse",
+   "count": 11,
+   "pct": 8.2
+  },
+  {
+   "skill": "Scheduling",
+   "category": "Business & Office",
+   "count": 10,
+   "pct": 7.5
+  }
+ ],
+ "skills_by_category": [
+  {
+   "category": "Soft Skills",
+   "count": 201
+  },
+  {
+   "category": "Skilled Trades & Manufacturing",
+   "count": 92
+  },
+  {
+   "category": "Healthcare",
+   "count": 85
+  },
+  {
+   "category": "Business & Office",
+   "count": 76
+  },
+  {
+   "category": "Logistics & Warehouse",
+   "count": 70
+  },
+  {
+   "category": "Sales & Customer Service",
+   "count": 68
+  },
+  {
+   "category": "Education & Public Service",
+   "count": 42
+  },
+  {
+   "category": "Information Technology",
+   "count": 34
+  }
+ ],
+ "jobs_by_city": [
+  {
+   "city": "Goodyear",
+   "count": 53
+  },
+  {
+   "city": "Avondale",
+   "count": 32
+  },
+  {
+   "city": "Tolleson",
+   "count": 18
+  },
+  {
+   "city": "Litchfield Park",
+   "count": 17
+  },
+  {
+   "city": "Buckeye",
+   "count": 8
+  },
+  {
+   "city": "Laveen",
+   "count": 6
+  }
+ ],
+ "postings_by_week": [
+  {
+   "week": "2026-03-30",
+   "count": 2
+  },
+  {
+   "week": "2026-04-06",
+   "count": 10
+  },
+  {
+   "week": "2026-04-13",
+   "count": 19
+  },
+  {
+   "week": "2026-04-20",
+   "count": 10
+  },
+  {
+   "week": "2026-04-27",
+   "count": 13
+  },
+  {
+   "week": "2026-05-04",
+   "count": 11
+  },
+  {
+   "week": "2026-05-11",
+   "count": 14
+  },
+  {
+   "week": "2026-05-18",
+   "count": 11
+  },
+  {
+   "week": "2026-05-25",
+   "count": 17
+  },
+  {
+   "week": "2026-06-01",
+   "count": 13
+  },
+  {
+   "week": "2026-06-08",
+   "count": 14
+  }
+ ]
+}
